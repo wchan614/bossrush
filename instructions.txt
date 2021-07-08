@@ -1,0 +1,6 @@
+to compile as jar (must use 1.8 jdk since 1.11 jre is unavailiable for public use.)
+
+javac *.java
+jar cmvf META-INF/MANIFEST.MF  BossRush.jar *
+ls *.class -Recurse | foreach {rm $_}
+java -jar .\BossRush.jar
